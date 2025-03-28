@@ -36,14 +36,7 @@ jobs:
         with:
           name: dist-artifact
           path: ./dist/  # Вказуємо точний шлях
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check-out repository
-        uses: actions/checkout@v3
-
+          
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
         with:

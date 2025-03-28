@@ -1,26 +1,19 @@
-name: Portfolio
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main  # або твоя основна гілка
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Check-out repository
+      - name: Checkout repo
         uses: actions/checkout@v3
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          cache: npm
 
       - name: Install dependencies
         run: npm install
@@ -28,19 +21,8 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          path: dist
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    steps:
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: dist  # Директорія, яку потрібно задеплоїти

@@ -26,21 +26,23 @@ jobs:
         run: npm install
 
       - name: Build project
+        run: rm -rf dist/*
+
+      - name: Build project
         run: npm run build
 
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        with:
-          path: dist
+      - name: List contents of dist  # Перевіряємо виведення директорії dist
+        run: ls -la dist
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check-out repository
-        uses: actions/checkout@v3
+      - name: List contents of dist  # Перевіряємо виведення директорії dist
+        run: find dist -type l
 
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v2
+      - name: List contents of dist  # Перевіряємо виведення директорії dist
+        run: du -sh dist
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}  # Токен для авторизації
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          

@@ -1,0 +1,7 @@
+.link {
+  color: $white-color;
+  transition: 0.3s all;
+  &:hover {
+    color: darken($color: $primary-color, $amount: 70%);
+  }
+}

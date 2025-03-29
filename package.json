@@ -1,5 +1,5 @@
 {
-  "name": "ddrigass.com",
+  "name": "driha.com",
   "version": "1.0.1",
   "private": "true",
   "description": "A clean, beautiful and responsive portfolio template for Developers!",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cobiwave/ddrigass.com"
+    "url": "git+https://github.com/cobiwave/driha.com"
   },
   "keywords": [],
   "author": "Jacobo Martinez",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cobiwave/ddrigass.com/issues"
+    "url": "https://github.com/cobiwave/driha.com/issues"
   },
-  "homepage": "https://github.com/cobiwave/ddrigass.com#readme",
+  "homepage": "https://github.com/cobiwave/driha.com#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",
     "parcel": "^2.8.2",

@@ -1,11 +1,11 @@
 <!--
   Hello!
   -
-  ddrigass.com is a clean and responsive portfolio template for Developers!
+  driha.com is a clean and responsive portfolio template for Developers!
   Created by Jacobo Martinez.
   -
-  Github Repo: https://github.com/cobiwave/ddrigass.com/
-  Readme: https://github.com/cobiwave/ddrigass.com/README.md
+  Github Repo: https://github.com/cobiwave/driha.com/
+  Readme: https://github.com/cobiwave/driha.com/README.md
   -
   For business & inquires, contact me -> jacobojavier98@gmail.com
 -->
@@ -18,11 +18,11 @@
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
 
     <!-- Todo: put here your site title -->
-    <title>[Your name here] | Developer</title>
+    <title>[Bohdan Driha here] | Developer</title>
     <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
     <meta name="keywords" content="[username], [name], skill" />
     <!-- Todo: improve your SEO by adding a small description of you -->
-    <meta name="description" content="[Your name here] | Developer" />
+    <meta name="description" content="[Bohdan Driha here] | Developer" />
 
     <link
       rel="stylesheet"
@@ -41,18 +41,22 @@
   <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
   <body>
     <div id="top"></div>
+    <canvas class="cursor-canvas"></canvas>
 
     <!-- **** Hero Section **** -->
     <section id="hero" class="jumbotron">
       <div class="container">
         <h1 class="hero-title load-hidden">
-          Hi, my name is <span class="text-color-main">Your Name</span>
+          Hi, my name is <span class="text-color-main">Bohdan Driha</span>
           <br />
-          I'm the Unknown Developer.
+          I'm the Senior Software Engineer.
         </h1>
         <p class="hero-cta load-hidden">
-          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
+          <a rel="noreferrer" class="cta-btn cta-btn--hero me-3" href="#about"
             >Know more</a
+          >
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#contact"
+            >Contact Me</a
           >
         </p>
       </div>
@@ -79,11 +83,10 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
-                This is where you can describe about yourself. The more you
-                describe about yourself, the more chances you have!
+                I am an experienced developer with deep expertise in backend, frontend, and DevOps. Throughout my career, I have worked in various companies, from startups to large enterprises, building high-load systems, microservices architecture, payment integrations, and retail & AI-driven solutions.
               </p>
               <p class="about-wrapper__info-text">
-                Extra Information about you! like hobbies and your goals.
+                Besides my technical skills, I have strong leadership qualities, problem-solving abilities, and adaptability to change. Always open to new challenges and collaborations!
               </p>
               <span class="d-flex mt-3">
                 <a
@@ -110,17 +113,25 @@
 
           <!-- Notice: each .row is a project -->
           <div class="row">
-            <div class="col-lg-4 col-sm-12">
+            <div class="col-lg-6 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 0</h3>
+                <h3 class="project-wrapper__text-title">Slot provider infrastructure</h3>
                 <div>
-                  <p class="mb-4">
-                    Describe the project being very specific, you can use the Twitter standard: no more than 280 characters: 
-                    complement the information: the skills learned or reinforced in its realization and how you faced it, 
-                    prove to be proactive in the search for solutions.
-                  </p>
+                  <p>A fully custom-built game slot provider platform, designed to handle high traffic and provide a seamless user experience. The infrastructure was created from scratch, supporting over 5000 concurrent users.</p>
+                    
+                    <p>Key technologies and features include:</p>
+                    <!-- <ul>
+                      <li><strong>Microservices architecture</strong> for flexibility and scalability</li>
+                      <li><strong>NestJS</strong> for building efficient and scalable server-side applications</li>
+                      <li><strong>OpenSearch</strong> for advanced search and analytics</li>
+                      <li><strong>Redis</strong> for caching and data storage</li>
+                      <li><strong>CI/CD pipelines</strong> using <strong>ArgoCD</strong> for continuous integration and deployment</li>
+                      <li><strong>Terraform</strong> for infrastructure as code, ensuring consistent and repeatable deployments</li>
+                    </ul> -->
+                  
+                    <p class="mb-4">This project showcases my ability to architect and deliver high-performance, scalable platforms that can handle significant user traffic while maintaining reliability and performance.</p>               
                 </div>
-                <a
+                <!-- <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
@@ -135,10 +146,10 @@
                   href="#!"
                 >
                   Source Code
-                </a>
+                </a> -->
               </div>
             </div>
-            <div class="col-lg-8 col-sm-12">
+            <div class="col-lg-6 col-sm-12">
               <div class="project-wrapper__image load-hidden">
                 <a rel="noreferrer" href="#!" target="_blank">
                   <div
@@ -151,7 +162,7 @@
                     <img
                       alt="Project Image"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="assets/projects/slot.jpg"
                     />
                   </div>
                 </a>
@@ -162,17 +173,38 @@
 
           <!-- Notice: each .row is a project -->
           <div class="row">
-            <div class="col-lg-4 col-sm-12">
+            
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/projects/soil.jpg"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 1</h3>
+                <h3 class="project-wrapper__text-title">Soil Analysis System</h3>
                 <div>
                   <p class="mb-4">
-                    Demonstrate in this description the skills of a programmer: such as having commitment, 
-                    having perseverance and accepting alternative solutions. Remember that being a portfolio you are not selling the project, 
-                    you are selling yourself, it reflects the resources used: Frameworks, libraries, platforms, etc.
+                    <p>A soil analysis system designed for farmers to optimize crop fertilization based on precise data insights. The platform collects and processes soil quality metrics, helping farmers make informed decisions to improve yield.</p>
+
+                    <p>This project empowers farmers with actionable insights, enhancing crop quality and sustainability through data-driven fertilization strategies.</p>
+
                   </p>
                 </div>
-                <a
+                <!-- <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
@@ -187,26 +219,7 @@
                   href="#!"
                 >
                   Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
-                    />
-                  </div>
-                </a>
+                </a> -->
               </div>
             </div>
           </div>
@@ -214,16 +227,19 @@
 
           <!-- Notice: each .row is a project -->
           <div class="row">
-            <div class="col-lg-4 col-sm-12">
+            <div class="col-lg-6 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 2</h3>
+                <h3 class="project-wrapper__text-title">Self-Checkout System</h3>
                 <div>
                   <p class="mb-4">
-                    If the project was collaborative, reflect it in this description, that will demonstrate communication and/or leadership skills. 
-                    Additionally, if you made use of the mastery of a second language, it will reflect on you professionalism.
+                    <p>A self-checkout system developed for <strong>Silpo (Fozzy Group)</strong> to enhance customer experience and streamline the purchasing process. The solution enables fast and secure transactions, reducing queues and operational costs.</p>
+
+                    <p>The system integrates with Silpo’s existing POS infrastructure, supports multiple payment methods, and utilizes computer vision for product recognition and fraud prevention. A user-friendly touchscreen interface ensures seamless interaction, while cloud-based storage enables real-time sales analytics.</p>
+
+                    <p>This project optimizes store operations, improves checkout speed, and enhances the overall shopping experience through automation.</p>
                   </p>
                 </div>
-                <a
+                <!-- <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
@@ -238,10 +254,10 @@
                   href="#!"
                 >
                   Source Code
-                </a>
+                </a> -->
               </div>
             </div>
-            <div class="col-lg-8 col-sm-12">
+            <div class="col-lg-6 col-sm-12">
               <div class="project-wrapper__image load-hidden">
                 <a rel="noreferrer" href="#!" target="_blank">
                   <div
@@ -254,7 +270,7 @@
                     <img
                       alt="Project Image"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="assets/projects/silpo.jpg"
                     />
                   </div>
                 </a>
@@ -272,14 +288,29 @@
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper load-hidden">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
+          <div class="contact-wrapper__text">
+            <p>
+              Leave your contact information, and I’ll get in touch with you. If you have any questions or proposals, don’t hesitate to reach out!
+            </p>
+            <p>
+              I’m always ready to discuss new projects and ideas. Leave a request, and we’ll find a convenient time for a meeting or consultation.
+            </p>
+          </div>
+          <div class="contact-wrapper__details">
+            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Odesa, Ukraine</p>
+            <p><i class="fa fa-envelope" aria-hidden="true"></i> <a class="link " href="mailto:ddrigass@gmail.com">ddrigass@gmail.com</a></p>
+            <p><i class="fa fa-phone" aria-hidden="true"></i> +380 93 888 29 88</p>
+            <p><i class="fa fa-telegram" aria-hidden="true"></i> <a class="link " href="https://t.me/ddrigass">@ddrigass</a></p>
+          </div>
+        </div>
+        <div>
           <a
-            rel="noreferrer"
-            target="_blank"
-            class="cta-btn cta-btn--resume"
-            href="mailto:example@email.com"
-            >Call to Action</a
-          >
+          rel="noreferrer"
+          target="_blank"
+          class="cta-btn cta-btn--resume"
+          href="mailto:ddrigass@gmail.com"
+          >Write mail</a
+        >
         </div>
       </div>
     </section>
@@ -292,14 +323,17 @@
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
         <div class="social-links">
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-twitter fa-inverse"></i>
+          <a rel="noreferrer" href="https://t.me/ddrigass" target="_blank">
+            <i class="fa fa-telegram fa-inverse"></i>
           </a>
-          <a rel="noreferrer" href="#!" target="_blank">
+          <a rel="noreferrer" href="https://www.linkedin.com/in/bohdan-driha/" target="_blank">
             <i class="fa fa-linkedin fa-inverse"></i>
           </a>
-          <a rel="noreferrer" href="#!" target="_blank">
+          <a rel="noreferrer" href="https://github.com/ddrigass" target="_blank">
             <i class="fa fa-github fa-inverse"></i>
+          </a>
+          <a rel="noreferrer" href="https://gitlab.com/ddrigass" target="_blank">
+            <i class="fa fa-gitlab fa-inverse"></i>
           </a>
         </div>
 
@@ -307,34 +341,7 @@
 
         <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
         <p class="footer__text">
-          © 2021 - Template developed by
-          <a rel="noreferrer" href="https://github.com/cobiwave" target="_blank"
-            >Jacobo Martínez</a
-          >
-        </p>
-
-        <!-- TO DO: remove this entire paragraph once you finish your portfolio -->
-        <p class="mt-3 pt-3">
-          <a
-            rel="noreferrer"
-            class="github-button"
-            href="https://github.com/cobiwave/ddrigass.com/fork"
-            data-icon="octicon-repo-forked"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Fork ntkme/github-buttons on GitHub"
-            >Fork</a
-          >
-          <a
-            rel="noreferrer" 
-            class="github-button"
-            href="https://github.com/cobiwave/ddrigass.com"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star cobiwave/ddrigass.com on GitHub"
-            >Star</a
-          >
+          © 2025 - Bohdan Driha
         </p>
       </div>
     </footer>
